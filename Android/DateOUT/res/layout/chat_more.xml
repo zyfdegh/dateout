@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/tv_more_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/chat__more_photo_selector"
+            android:gravity="center_horizontal"
+            android:text="相册" />
+
+        <TextView
+            android:id="@+id/tv_more_carema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/chat__more_camera_selector"
+            android:gravity="center_horizontal"
+            android:text="相机" />
+
+        <TextView
+            android:id="@+id/tv_more_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableTop="@drawable/chat__more_location_selector"
+            android:gravity="center_horizontal"
+            android:text="地图" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+DateoutServerPlugin为服务端辅助插件
+推荐使用Eclipse JaveEE 4.0以上版或者MyEclipse 10以上版本的IDE导入并编译运行工程
+运行所需的HTTP服务器与Servlet容器可选择Jetty或者Apache Tomcat

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_user_protocal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/tabBar_backgroud"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_btn_back"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户条款"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ProgressBar  
+        android:id="@+id/pb_progress_bar"  
+        style="?android:attr/progressBarStyleHorizontal"  
+        android:layout_width="fill_parent"  
+        android:layout_height="3dip"  
+        android:indeterminateOnly="false"  
+        android:max="100"  
+        />  
+    
+    <WebView
+        android:id="@+id/wv_user_protocal" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+</LinearLayout>

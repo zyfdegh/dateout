@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_vacrd_mail"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_mail" />
+
+        <TextView
+            android:id="@+id/tv_vcard_mail"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_vacrd_mail"
+            android:text="邮箱" />
+
+        <TextView
+            android:id="@+id/tv_vcard_mail_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_vcard_mail"
+            android:background="@null"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_vcard_emotion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_vacrd_emotion"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_emotion" />
+
+        <TextView
+            android:id="@+id/tv_vcard_emotion"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_vacrd_emotion"
+            android:text="情感状态" />
+
+        <TextView
+            android:id="@+id/tv_vcard_emotion_value"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/tv_vcard_emotion"
+            android:text="单身" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_vcard_interest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_vacrd_interest"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_interest" />
+
+        <TextView
+            android:id="@+id/tv_vcard_interest"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_vacrd_interest"
+            android:text="兴趣爱好" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_vacrd_profession"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_profession" />
+
+        <TextView
+            android:id="@+id/tv_vcard_profession"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_vacrd_profession"
+            android:text="职业" />
+
+        <TextView
+            android:id="@+id/tv_vcard_profession_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_vcard_profession"
+            android:background="@null"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+</LinearLayout>

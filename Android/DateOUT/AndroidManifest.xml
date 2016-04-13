@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuist.dateout"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- 百度API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <!-- <uses-permission android:name="android.permission.BROADCAST_STICKY" /> -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name="edu.nuist.dateout.app.DateoutApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="zbNWcr4QYnO49Vs94rP0TKxB" />
+
+        <activity
+            android:name="edu.nuist.dateout.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="edu.nuist.dateout.activity.RegistActivity" 
+            android:theme="@style/SampleTheme.Light">
+        </activity>
+        <activity android:name="edu.nuist.dateout.activity.ChatActivity" />
+        <activity
+            android:name="edu.nuist.dateout.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:theme="@style/SampleTheme.Light"
+            />
+        <activity android:name="edu.nuist.dateout.activity.FriendDetailActivity" />
+        <activity
+            android:name="edu.nuist.dateout.activity.AddFriendActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="edu.nuist.dateout.activity.MapActivity" />
+        <activity android:name="com.nuist.dateout.tab1.activity.FriendCardActivity" />
+        <activity android:name="com.nuist.dateout.tab4.activity.PersonalCardActivity" />
+        <activity
+            android:name="com.nuist.dateout.tab4.activity.PictureGameActivity"
+            android:theme="@style/SampleTheme.Light" />
+        <activity
+            android:name="com.nuist.dateout.tab4.activity.EditVcardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/SampleTheme.Light"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.nuist.dateout.tab4.activity.EditSignActivity" />
+        <activity android:name="com.nuist.dateout.tab4.activity.ShakeActivity" />
+        <activity
+            android:name="com.nuist.dateout.tab4.activity.ExitApplicationActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.nuist.dateout.tab4.activity.GameSettingActivity"
+            android:theme="@style/SampleTheme.Light" >
+        </activity>
+        <activity
+            android:name="com.nuist.dateout.tab1.activity.FillCardActivity"
+            android:theme="@style/SampleTheme.Light" >
+        </activity>
+        <activity android:name="com.nuist.dateout.tab4.activity.GameInfoActivity" />
+        <activity android:name="com.nuist.dateout.tab1.activity.StartAppActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nuist.dateout.tab1.activity.AboutUsActivity" >
+        </activity>
+        <activity android:name="com.nuist.dateout.tab1.activity.SetAppActivity" >
+        </activity>
+        <activity android:name="com.nuist.dateout.tab1.activity.ClearTrashActivity" 
+            android:theme="@style/SampleTheme.Light">
+        </activity>
+        <activity android:name="com.nuist.dateout.tab1.activity.ShowImageActivity" >
+        </activity>
+
+		<activity android:name="com.nuist.dateout.tab1.activity.UserProtocalActivity"></activity>
+		<activity android:name="com.nuist.dateout.tab1.activity.HelpAndFeedBackActivity"></activity>
+		<activity android:name="com.nuist.dateout.tab1.activity.FriendCardDetailActivity"></activity>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+    
+</manifest>

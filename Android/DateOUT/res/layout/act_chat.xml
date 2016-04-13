@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <!-- 聊天窗口页面 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_chat_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="小张"
+                android:textColor="#EEEEEE"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_chat_userstat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_chat_username"
+                android:layout_centerHorizontal="true"
+                android:text="(在线)"
+                android:textColor="#EEEEEE"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_chat_frienddetail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/i_user_icon_selector"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_chat_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/lv_chat_msglist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:stackFromBottom="true" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/iv_chat_viewmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/keyboard_icon_selector" />
+
+            <ImageView
+                android:id="@+id/iv_chat_face"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chat__showface_selector" />
+
+            <EditText
+                android:id="@+id/et_chat_msgtosend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_chatview_voice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/chat_voice_icon_selector" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/lo_chatview_more"
+            layout="@layout/chat_more"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/lo_chatview_voice"
+            layout="@layout/chat_voice"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/lo_chatview_face"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

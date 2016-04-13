@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!--主题背景色  -->
+    <color name="theme_backgroud">#DDF5F6</color>
+    <!-- tabBar背景色 -->
+    <color name="tabBar_backgroud">#00C18C</color>
+    <!-- tabBar背景色  略透明  -->
+     <color name="tabBar_backgroud_alpha">#00C122</color>
+    <!-- 设置见面item被选中时的颜色 -->
+    <color name="item_selected">#a1f3f0</color>
+    <!-- 灰色 -->
+    <color name="gray">#8a9595</color>
+   <!-- 黑色 -->
+   <color name="black">#151a1a</color>
+   <!-- 纯黑色 -->
+   
+   <color name="dark_black">#000000</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- 蓝色字体 -->
+    <color name="blue_font">#66a5e0</color>
+    
+    <!-- 灰色字体 -->
+    <color name="gray_font">#7c7c7d</color>
+    <!-- 4个item字体的颜色 蓝 -->
+    <color name="item_font_blue">#007fff</color>
+    <!-- 亮灰色 -->
+    <color name="bright_gray">#a5afb9</color>
+    
+    <!-- 黑灰色字体 -->
+    <color name="black_font">#252525</color> 
+    
+    <!-- 浅灰色 -->
+    <color name="light_gray_font">#808080</color>
+    <!-- list分割线的颜色 -->
+    <color name="divider_line">#dedfe0</color>
+</resources>

@@ -1,0 +1,45 @@
+本文档列出了服务端程序DateoutServerPlugin源码目录结构，并对目录下文件用于作简要说明
+
+卷 Win 的文件夹 PATH 列表
+卷序列号为 E2EE-0633
+C:\USERS\VEAYO\DESKTOP\DATEOUTWRKSPC\DATEOUTSERVERPLUGIN\SRC
+│  dbConfig.properties --用于配置数据库连接
+│  
+└─edu
+    └─nuist
+        └─dateout
+            ├─config
+            │      ServerConfig.java --用于配置服务端参数
+            │      
+            ├─db
+            │      DBAssit.java --数据库助手（增删查改）
+            │      DBUtil.java --数据库组件（数据库连接）
+            │      
+            ├─model
+            │      GameConfig.java --游戏配置模型
+            │      RandomUser.java --随机用户模型
+            │      UploadedFileModel.java --上传的文件模型
+            │      User.java --用户模型
+            │      UserLoc.java --用户位置模型
+            │      UserNear.java --附近的人模型
+            │      UserRandom.java --随机用户模型
+            │      
+            ├─servlet
+            │      DownloadLinkServlet.java --用于处理下载链接请求
+            │      DownloadServlet.java --用于处理文件下载请求
+            │      FileNameServlet.java	--用于处理文件名请求（查询特定前缀的文件完整名称）
+            │      GameConfigFetchServlet.java --用于处理游戏配置查询请求
+            │      GameConfigSaveServlet.java --用于处理游戏配置上传请求
+            │      GetRandomUserServlet.java --用于处理获取随机用户请求
+            │      LocationServlet.java	--用于处理位置信息的保存请求和附近的人查询请求
+            │      UploadServlet.java --用于处理文件上传请求
+            │      
+            ├─test
+            └─util
+                    DistanceCaculator.java --用于计算地球球面两点距离
+                    FileAssit.java --用于协助处理文件读写操作
+                    FileComparator.java --用于筛选和排序文件
+                    FilePathAssit.java --用于协作分配文件存放路径
+                    JsonAssit.java --用于将附近的人列表或随机用户列表转换为JSON字符串
+                    OnlineStatusJudge.java --用于判断用户在线状态
+                    

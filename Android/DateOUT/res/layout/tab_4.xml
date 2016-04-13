@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@style/TitleBarStyle"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lo_PersonalInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_setting_head"
+                    style="@style/setting_imageIcon_style"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i2" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/iv_setting_head"
+                    android:text="个人信息" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_game"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/add_friend"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/jqp" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/add_friend"
+                    android:text="游戏配置" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_shake"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/add_friend_shake"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/jqv" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/add_friend_shake"
+                    android:text="查找陌生人" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_vcard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/clock_icon"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/jqt" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/clock_icon"
+                    android:text="编辑资料" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_clear_trash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_setting_clear_trash"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/i_clear_trash" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/iv_setting_clear_trash"
+                    android:text="清理缓存" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_set"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_setting_set"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/i_setting_set" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/iv_setting_set"
+                    android:text="设置" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_setting_about_us"
+                    style="@style/setting_imageIcon_style"
+                    android:src="@drawable/i_about_us" />
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_toRightOf="@id/iv_setting_about_us"
+                    android:text="关于我们" />
+
+                <ImageView
+                    style="@style/setting_image_style"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lo_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/vcard_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dip"
+                    android:text="退出"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

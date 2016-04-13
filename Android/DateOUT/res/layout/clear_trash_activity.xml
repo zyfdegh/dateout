@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/clear_trash_itle_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_clear_trash_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/tabBar_backgroud"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_btn_back"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="清理"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_trash_chat_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:layout_centerInParent="true"
+            android:text="清理聊天记录"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_trash_picture"
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:layout_centerInParent="true"
+            android:text="清理图片缓存"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_trash_voice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:layout_centerInParent="true"
+            android:text="清理语音缓存"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_trash_all"
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:layout_centerInParent="true"
+            android:text="清理所有缓存"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

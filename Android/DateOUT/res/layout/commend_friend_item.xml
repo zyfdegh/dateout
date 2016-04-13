@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.nuist.dateout.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/item_font_blue" >
+
+    <ImageView
+        android:id="@+id/iv_item_head"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_item_state"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/state_point_green" />
+
+    <TextView
+        android:id="@+id/tv_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="111m"
+        android:textColor="@color/white" />
+
+</edu.nuist.dateout.view.SquareLayout>

@@ -1,0 +1,149 @@
+# view res/layout/chat_face_container.xml #generated:10
+# view res/layout/image_indicator_layout.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/act_chat.xml #generated:53
+# view res/layout/tab_1.xml #generated:45
+# view res/layout/tab_2.xml #generated:42
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view res/layout/friend_card_activity.xml #generated:24
+# view res/layout/friend_card_detail_activity.xml #generated:24
+# view res/layout/personal_card_activity.xml #generated:19
+-keep class com.allthelucky.common.view.network.NetworkImageIndicatorView { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/act_map.xml #generated:8
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.nuist.dateout.tab1.activity.AboutUsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.nuist.dateout.tab1.activity.ClearTrashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.nuist.dateout.tab1.activity.FillCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.nuist.dateout.tab1.activity.FriendCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.nuist.dateout.tab1.activity.FriendCardDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.nuist.dateout.tab1.activity.HelpAndFeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.nuist.dateout.tab1.activity.SetAppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.nuist.dateout.tab1.activity.ShowImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.nuist.dateout.tab1.activity.StartAppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.nuist.dateout.tab1.activity.UserProtocalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.nuist.dateout.tab4.activity.EditSignActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.nuist.dateout.tab4.activity.EditVcardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.nuist.dateout.tab4.activity.ExitApplicationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.nuist.dateout.tab4.activity.GameInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.nuist.dateout.tab4.activity.GameSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.nuist.dateout.tab4.activity.PersonalCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.nuist.dateout.tab4.activity.PictureGameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.nuist.dateout.tab4.activity.ShakeActivity { <init>(...); }
+
+# view res/layout/picturegame_activity.xml #generated:7
+-keep class com.nuist.picturegame.view.GamePintuLayout { <init>(...); }
+
+# view res/layout/game_info_activity.xml #generated:52
+# view res/layout/game_setting_activity.xml #generated:59
+-keep class com.nuist.picturegame.view.PictureSplitedView { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class edu.nuist.dateout.activity.AddFriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class edu.nuist.dateout.activity.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class edu.nuist.dateout.activity.FriendDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class edu.nuist.dateout.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class edu.nuist.dateout.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class edu.nuist.dateout.activity.MapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class edu.nuist.dateout.activity.RegistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class edu.nuist.dateout.app.DateoutApp { <init>(...); }
+
+# view res/layout/tab_2.xml #generated:67
+-keep class edu.nuist.dateout.test.SideBar { <init>(...); }
+
+# view res/layout/set_app_activity.xml #generated:46
+-keep class edu.nuist.dateout.view.CheckSwitchButton { <init>(...); }
+
+# view res/layout/tab_3.xml #generated:22
+-keep class edu.nuist.dateout.view.ListViewWithDelete { <init>(...); }
+
+# view res/layout/commend_friend_item.xml #generated:2
+# view res/layout/friend_card_activity.xml #generated:20
+# view res/layout/friend_card_detail_activity.xml #generated:20
+# view res/layout/game_info_activity.xml #generated:46
+# view res/layout/game_setting_activity.xml #generated:50
+# view res/layout/personal_card_activity.xml #generated:15
+-keep class edu.nuist.dateout.view.SquareLayout { <init>(...); }
+
+# view res/layout/show_image_activity.xml #generated:8
+-keep class edu.nuist.dateout.view.ZoomImageView { <init>(...); }
+
+# view res/layout/game_setting_dialog.xml #generated:25
+# view res/layout/game_setting_dialog.xml #generated:42
+# view res/layout/vcard_info_age_dialog.xml #generated:14
+# view res/layout/vcard_info_age_dialog.xml #generated:26
+# view res/layout/vcard_info_age_dialog.xml #generated:38
+# view res/layout/vcard_info_city_dialog.xml #generated:14
+# view res/layout/vcard_info_city_dialog.xml #generated:20
+# view res/layout/vcard_info_height_dialog.xml #generated:14
+# view res/layout/vcard_info_sex_dialog.xml #generated:14
+# view res/layout/vcard_info_weight_dialog.xml #generated:14
+-keep class net.simonvt.numberpicker.NumberPicker { <init>(...); }
+
+# view res/layout/number_picker_with_selector_wheel.xml #generated:22
+-keep class net.simonvt.numberpicker.NumberPicker$CustomEditText { <init>(...); }
+
+# onClick res/layout/exit_dialog.xml #generated:37
+-keepclassmembers class * { *** exitbutton0(...); }
+
+# onClick res/layout/exit_dialog.xml #generated:49
+-keepclassmembers class * { *** exitbutton1(...); }
+
+# onClick res/layout/shake_activity.xml #generated:62
+-keepclassmembers class * { *** shake_activity_back(...); }
+

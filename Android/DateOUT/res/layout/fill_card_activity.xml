@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="完善资料"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_fill_card_ignore"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@color/tabBar_backgroud"
+            android:text="跳过"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/theme_backgroud"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_fillvcard_nickname"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_uer_nickname" />
+
+        <TextView
+            android:id="@+id/tv_fillvacrd_nickname"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_fillvcard_nickname"
+            android:text="昵称" />
+
+        <EditText
+            android:id="@+id/et_fillvacrd_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tv_fillvacrd_nickname"
+            android:background="@null"
+            android:hint="用户昵称"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/theme_backgroud"
+        android:clickable="true" >
+
+        <ImageView
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_sex" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="男"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="女"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_fillvcard_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/theme_backgroud"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_fillvacrd_age"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_age" />
+
+        <TextView
+            android:id="@+id/tv_fillvacrd_age"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_fillvacrd_age"
+            android:text="生日" />
+
+        <TextView
+            android:id="@+id/tv_fillvcard_age_value"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/tv_fillvacrd_age" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_fillvcard_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/theme_backgroud"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_fillvacrd_city"
+            style="@style/setting_imageIcon_style"
+            android:src="@drawable/i_vcard_city" />
+
+        <TextView
+            android:id="@+id/tv_fillvcard_city"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/iv_fillvacrd_city"
+            android:text="家乡" />
+
+        <TextView
+            android:id="@+id/tv_fillvcard_city_value"
+            style="@style/vcard_font_style"
+            android:layout_toRightOf="@id/tv_fillvcard_city" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_fill_card_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_selector"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

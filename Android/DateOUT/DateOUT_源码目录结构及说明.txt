@@ -1,0 +1,189 @@
+本文档列出了客户端程序DateOUT源码目录结构，并对目录下文件用于作简要说明
+
+卷 Win 的文件夹 PATH 列表
+卷序列号为 E2EE-0633
+C:\USERS\VEAYO\DESKTOP\DATEOUTWRKSPC\DATEOUT\SRC
+├─com
+│  └─nuist
+│      ├─dateout
+│      │  ├─face
+│      │  │      AnimatedGifDrawable.java ——表情Drawable类
+│      │  │      AnimatedImageSpan.java ——设置复合文本类
+│      │  │      FaceGVAdapter.java ——表情GridView适配器
+│      │  │      FaceVPAdapter.java ——表情ViewPager适配器
+│      │  │      GifDecoder.java ——gif表情解码
+│      │  │      
+│      │  ├─listener
+│      │  │      MyOnGesTureListener.java ——手势监听类     
+│      │  │      
+│      │  ├─media
+│      │  │      RecordDialog.java ——录音对话框 
+│      │  │      RecordManger.java ——录音管理
+│      │  │      VoiceAnimManager.java ——录音动画管理
+│      │  │      
+│      │  ├─tab1
+│      │  │  └─activity
+│      │  │          AboutUsActivity.java ——关于我们界面
+│      │  │          ClearTrashActivity.java ——清理缓存界面
+│      │  │          FillCardActivity.java ——完善资料界面
+│      │  │          FriendCardActivity.java ——好友名片界面
+│      │  │          FriendCardDetailActivity.java ——好友详细信息界面
+│      │  │          HelpAndFeedBackActivity.java ——帮助和反馈界面
+│      │  │          SetAppActivity.java ——设置界面
+│      │  │          ShowImageActivity.java ——展现图片界面
+│      │  │          StartAppActivity.java ——开始动画
+│      │  │          UserProtocalActivity.java ——用户协议界面
+│      │  │          
+│      │  └─tab4
+│      │      └─activity
+│      │              EditSignActivity.java ——编辑签名界面
+│      │              EditVcardActivity.java ——编辑名片界面
+│      │              ExitApplicationActivity.java ——退出程序界面
+│      │              GameInfoActivity.java ——游戏信息界面
+│      │              GameSettingActivity.java ——游戏设置界面
+│      │              PersonalCardActivity.java ——个人名片界面
+│      │              PictureGameActivity.java ——游戏界面
+│      │              ShakeActivity.java ——摇一摇界面
+│      │              ShakeListener.java ——摇一摇的监听类
+│      │              
+│      ├─dialog
+│      │      AgeDialog.java ——选择年龄对话框
+│      │      CityDialog.java ——选择城市对话框
+│      │      HeightDialog.java ——选择身高对话框
+│      │      ListLongClickDialog.java ——长按好友后弹出的对话框
+│      │      MyProgressDialog.java ——自定义进度条对话框
+│      │      SexDialog.java ——选择性别对话框
+│      │      WeightDialog.java ——选择体重对话框
+│      │      
+│      └─picturegame
+│          ├─dialog
+│          │      GameSettingDialog.java ——游戏难度设置对话框
+│          │      
+│          ├─util
+│          │      ImagePiece.java ——图片分割模型
+│          │      ImageSplitterUtil.java ——图片分割工具类
+│          │      
+│          └─view
+│                  GamePintuLayout.java ——游戏布局
+│                  PictureSplitedView.java ——分割图片布局
+│                  
+└─edu
+    └─nuist
+        └─dateout
+            ├─activity
+            │      AddFriendActivity.java ——添加好友界面
+            │      ChatActivity.java ——聊天界面
+            │      FriendDetailActivity.java ——好友详情界面
+            │      LoginActivity.java ——登录界面
+            │      MainActivity.java ——主界面
+            │      MapActivity.java ——百度地图界面
+            │      RegistActivity.java ——注册界面
+            │      
+            ├─app
+            │      DateoutApp.java ——继承自Application的应用程序类
+            │      
+            ├─core
+            │      MessageAssit.java ——用户监听聊天消息并分派聊天消息
+            │      MsgNotifier.java ——顶部通知栏提醒工具
+            │      MsgUtil.java ——用于实现Openfire消息包与本地消息包的转换
+            │      ProcessAssit.java ——进程管理类
+            │      XMPPConnectionAssit.java ——XMPP连接辅助类，用于账户注册、登录、重连等
+            │      XMPPConnectionListener.java ——XMPP连接状态监听器
+            │      
+            ├─db
+            │      DBAssit.java ——数据库助手类，用于处理数据库的初始化、连接，并实现增删查改操作
+            │      
+            ├─interfc
+            │      ListItemsCallback.java ——聊天条目点击回调接口
+            │      
+            ├─misc
+            │      ImageLoaderCfg.java ——用于配置ImageLoader的参数
+            │      
+            ├─model
+            │      ChatBubbleItem.java —— 聊天记录条目模型
+            │      ChatBubbleTag.java —— 聊天记录条目绑定的标签数据模型
+            │      CityModel.java —— 城市信息模型
+            │      CustomMsgPack.java —— 自定义的消息包模型
+            │      CustomVcard.java ——自定义的用户资料卡模型
+            │      DownloadResult.java ——下载结果模型
+            │      EventOffline.java ——掉线事件模型
+            │      FriendInMapModel.java ——地图上显示的好友数据模型
+            │      FriendItem.java —— 好友数据模型
+            │      GameConfig.java ——传输过程中的游戏配置数据模型
+            │      GameConfigInfo.java ——拼图游戏所用的配置数据模型
+            │      PhotoPack.java ——资料卡编辑页面顶部照片的视图模型
+            │      ProvinceModel.java ——省份城市数据模型
+            │      RecentMsgItem.java ——最近聊天联系人模型
+            │      User.java ——用户模型
+            │      UserHead.java ——用户头像模型
+            │      UserLoc.java ——用户位置模型
+            │      UserNear.java ——附近的人模型
+            │      UserRandom.java ——随机用户模型
+            │      
+            ├─net
+            │      DownloadUtil.java ——用于下载文件
+            │      HttpUtil.java --用于集中到服务端的HTTP请求
+            │      UploadUtil.java --用于上传文件到服务端
+            │      
+            ├─tab
+            │      FinderManager.java ——发现界面管理类
+            │      FriendListManager.java ——好友列表界面管理类
+            │      RecentMsgManager.java ——消息界面管理类
+            │      SettingManager.java ——设置界面管理类
+            │      
+            ├─task
+            │      DownloadAndCacheTask.java --从服务端下载文件并缓存文件的异步任务
+            │      DownloadFileTask.java --从服务端下载文件的异步任务
+            │      FetchDownLinkTask.java --从服务端获取下载链接的异步任务
+            │      FetchFileNameTask.java --从服务端获取文件完整名的异步任务
+            │      FetchGameConfigTask.java --从服务端获取游戏配置的异步任务
+            │      FetchOfflineMsgTask.java --从服务端获取离线消息的异步任务
+            │      FetchRandomUsersTask.java --从服务端获取随机用户的异步任务
+            │      UploadFileTask.java --上传文件到服务端的异步任务
+            │      UploadGameConfigTask.java --上传游戏配置到服务端的异步任务
+            │      UploadLocAndGetUsersNearTask.java --上传地理位置并获取附近的人的异步任务
+            │      UserOnlineStatCheckTask.java --用户在线状态检测异步任务
+            │      VCardLoadTask.java --加载用户资料的异步任务
+            │      
+            ├─test
+            │      CharacterParser.java ——汉字拼音转化类
+            │      help.java ——好友列表数据填充
+            │      PinyinComparator.java ——首字母比较器
+            │      SideBar.java ——好友列表界面字母排序sideBar
+            │      
+            ├─util
+            │      AESCoder.java --用于加密字符串或者文件
+            │      CacheAssit.java --用于缓存文件的助手类
+            │      FileAssit.java --用于处理文件读写操作的助手类
+            │      FileNameGenTool.java --用于生成文件名的助手类
+            │      FilePathTool.java --用于获取文件在本地绝对存储路径的工具类
+            │      FormatTools.java --用于转换数据类型的工具类
+            │      HeadImageAssit.java --用户头像助手类，用于实现头像缓存
+            │      ImageTools.java --用于图像的圆角和去色
+            │      JsonAssit.java --用于解析JSON
+            │      MD5Assit.java --用于生成字符串或者文件的MD5码
+            │      MediaAssit.java --用于播放语音
+            │      NetworkAssit.java --用于检测网络可用性
+            │      OnlineStatusAssit.java --用于检测用于在线状态
+            │      PhotoAssit.java --用于启动相机、相册或者系统图片裁剪工具
+            │      RegexAssit.java --正则表达式助手类，用于验证IP、用户ID、密码的合法性
+            │      TimeAssit.java --用于生成当前系统时间，时间格式转换和时间友好化处理
+            │      VCardAssit.java --用于转换Openfire的用户名片与本地自定义的名片，并实现上传和下载
+            │      XmlParserHandler.java --用于解析XML
+            │      
+            ├─value
+            │      AppConfig.java --用于配置客户端运行参数的静态数据类
+            │      VariableHolder.java --用于标记程序运行的状态量
+            │      
+            └─view
+                    ChatBubbleAdapter.java ——聊天气泡适配器
+                    CheckSwitchButton.java ——自定义开关按钮
+                    DialogCenter.java ——对话框中心，定义了不同类型的对话框
+                    FrameAnimationController.java ——帧动画管理类
+                    FriendListAdapter.java ——通讯录联系人列表适配器
+                    ListViewWithDelete.java ——带右滑删除功能的列表视图
+                    MyGridViewAdapter.java ——随机用户网格状布局适配器
+                    RecentMsgAdapter.java ——最近联系人列表适配器
+                    SquareLayout.java ——正方形布局
+                    ZoomImageView.java ——带拖拽和缩放功能的图像布局
+                    

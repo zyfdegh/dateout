@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/btn_map_locate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+   		android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_map_locate" />
+
+    <LinearLayout
+        android:id="@+id/lo_map_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/map_user_shape"
+        android:orientation="vertical" 
+       	android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/iv_map_head"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/head1" />
+
+            
+            <TextView
+                
+                    android:id="@+id/tv_map_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:gravity="center"
+                    android:text="用户名"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_map_user_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="距离"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                
+                  <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_map_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="时间"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btn_map_hide_user_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/map_view_gone"
+                android:padding="5dp"
+                android:text="隐藏"
+                android:textSize="17sp"
+                android:textColor="#666666" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_map_add_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/map_add_user"
+                android:padding="5dp"
+                android:text="添加好友"
+                android:textSize="17sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

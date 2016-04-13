@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="false">
+	<!-- 添加多个帧 -->
+	<item android:drawable="@drawable/earth_anim1" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim2" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim3" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim4" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim5" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim6" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim7" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim8" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim9" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim10" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim11" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim12" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim13" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim14" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim15" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim16" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim17" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim18" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim19" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim20" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim21" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim22" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim23" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim24" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim25" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim26" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim27" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim28" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim29" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim30" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim31" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim32" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim33" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim34" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim35" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim36" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim37" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim38" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim39" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim40" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim41" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim41" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim42" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim43" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim44" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim45" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim46" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim47" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim48" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim49" android:duration="30" />
+	<item android:drawable="@drawable/earth_anim50" android:duration="30" />
+</animation-list>

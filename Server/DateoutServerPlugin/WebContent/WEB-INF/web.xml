@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<servlet>
+		<servlet-name>UploadFile</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadFile</servlet-name>
+		<url-pattern>/uploadfile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DownloadFile</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.DownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadFile</servlet-name>
+		<url-pattern>/downloadfile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FileNameServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.FileNameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileNameServlet</servlet-name>
+		<url-pattern>/getfilename</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DownloadLinkServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.DownloadLinkServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadLinkServlet</servlet-name>
+		<url-pattern>/getdownloadlink</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LocationServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.LocationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LocationServlet</servlet-name>
+		<url-pattern>/getpeoplenear</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GameConfigSaveServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.GameConfigSaveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GameConfigSaveServlet</servlet-name>
+		<url-pattern>/savegameconfig</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GameConfigFetchServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.GameConfigFetchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GameConfigFetchServlet</servlet-name>
+		<url-pattern>/getgameconfig</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetRandomUserServlet</servlet-name>
+		<servlet-class>edu.nuist.dateout.servlet.GetRandomUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRandomUserServlet</servlet-name>
+		<url-pattern>/getrandomusers</url-pattern>
+	</servlet-mapping>
+</web-app>

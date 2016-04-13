@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_backgroud"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_set_app_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/tabBar_backgroud"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_btn_back"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:text="消息提示音 " />
+
+        <edu.nuist.dateout.view.CheckSwitchButton
+            android:id="@+id/cb_set_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:enabled="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_check_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:text="检测更新" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lo_share_app"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true" >
+
+        <TextView
+            style="@style/vcard_font_style"
+            android:text="分享应用" />
+
+        <ImageView
+            style="@style/setting_image_style"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+</LinearLayout>

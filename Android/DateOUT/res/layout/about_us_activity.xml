@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_backgroud" >
+
+    <RelativeLayout
+        android:id="@+id/about_us_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_about_us_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/tabBar_backgroud"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_btn_back"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于 DateOut"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="DATE OUT"
+        android:textColor="@color/gray_font"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/vcard_font_style"
+                android:text="版本信息"
+                android:textColor="@color/black" />
+
+            <TextView
+               	style="@style/vcard_font_style"
+               	android:layout_alignParentRight="true"
+               	android:textColor="@color/black"
+               	android:text="v2.1" 
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lo_user_protocal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/vcard_font_style"
+                android:text="用户条款"
+                android:textColor="@color/black" />
+
+            <ImageView
+                style="@style/setting_image_style"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lo_introduce_function"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/vcard_font_style"
+                android:text="功能介绍"
+                android:textColor="@color/black" />
+
+            <ImageView
+                style="@style/setting_image_style"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lo_help_and_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true" >
+
+            <TextView
+                style="@style/vcard_font_style"
+                android:text="帮助反馈"
+                android:textColor="@color/black" />
+
+            <ImageView
+                style="@style/setting_image_style"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
